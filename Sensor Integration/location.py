@@ -1,5 +1,8 @@
 import math
 class Rover:
+    '''
+    Keeps track of the current position of the rover and the projected destination.
+    '''
     def __init__(self, initial_x=0, initial_y=0, initial_heading=0):
         self.x = initial_x  # Initial x-coordinate
         self.y = initial_y  # Initial y-coordinate
@@ -13,8 +16,9 @@ class Rover:
     def update_heading(self, new_heading):
         # Update heading
         self.heading = new_heading % 360
+
     def locate(self):
+        # returns the current location and destination of the rover
         rovposition=[self.x,self.y]
         rovheading=self.heading
         return rovposition, rovheading
-        

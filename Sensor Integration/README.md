@@ -1,14 +1,20 @@
-# Contents
+# Sensor Integration
+Contains all the necessary code for communicating with the hardware and manipulating the rover kinematics. All of these are based on Arduino and use Pyfirmata to connect Python to Arduino. Before running any code,
+
+- Install the Firmata library on Arduino IDE. The Firmata library implements the Firmata protocol for communicating with software on the host computer.
+- Upload the *Standard Firmata* code to the connected Arduino board from *Examples/Firmata/* in the menu. 
 
 Use pyfirmata2 with Arduino wherever necessary.
 
-- Inverse Kinematics (with [one hinge](Sensor%20Integration/inverse%20kinematics/inverse_kin%202%20arms.py) and [two hinges](Sensor%20Integration/inverse%20kinematics/inverse_kin%203%20arms.py))
-- [Working arm controller](Sensor%20Integration/arm_working.ipynb) (rotates the arm to a given $(x,y,z)$ coordinate)
-- [Manipulator Base Alignment](Sensor%20Integration/basealign.py) (rotates the arm base to a given angle)
+## Contents
+
+- Inverse Kinematics (with [one hinge](/inverse%20kinematics/inverse_kin%202%20arms.py) and [two hinges](/inverse%20kinematics/inverse_kin%203%20arms.py))
+- [Working arm controller](/arm_working.ipynb) (rotates the arm to a given $(x,y,z)$ coordinate)
+- [Manipulator Base Alignment](/basealign.py) (rotates the arm base to a given angle)
 - Arduino Integrations
-  - [Servo Motor](Sensor%20Integration/servo/servo.py)
-  - [Ultrasonic Sensor](Sensor%20Integration/ultrasonic/ultrasonic.py)
-  - Stepper Motor ([A4988 driver](Sensor%20Integration/StepperLib.py))
-  - [DC Motor](Sensor%20Integration/dcmotor_encoder.py)
-  - [MPU 6050](Sensor%20Integration/mpu6050.py) (accelerometer and gyroscope module)
-  - [NRF 2401](Sensor%20Integration/nrf.py) (wireless transceiver)
+  - [Servo Motor](/servo/servo.py)
+  - [Ultrasonic Sensor](/ultrasonic/ultrasonic.py)
+  - Stepper Motor ([A4988 driver](/StepperLib.py))
+  - [DC Motor](/dcmotor_encoder.py)
+  - [MPU 6050](/mpu6050.py) (accelerometer and gyroscope module)
+  - [NRF 2401](/nrf.py) (wireless transceiver)

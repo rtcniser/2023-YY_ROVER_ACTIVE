@@ -2,7 +2,7 @@ from flask import Flask, render_template, Response, request
 from StepperLib import Stepper 
 import pyfirmata2 as pyfirmata
 
-app = Flask(__name__, template_folder='/home/rtc/Desktop/rover-sensor-integration/rover-sensor-integration/templates')
+app = Flask(__name__, template_folder='/templates')
 
 
 # Default route
