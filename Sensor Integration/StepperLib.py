@@ -33,6 +33,7 @@ class Stepper():
         self.step_delay = delay
 
     def switch_direction(self):
+        # reverse directions
         self.direction = 1 if self.direction == 0 else 0
         self.dir_pin.write(self.direction)
     
@@ -41,6 +42,9 @@ class Stepper():
             self.switch_direction()
             angle = -angle
 
+        # rotate the motor in the minimum number of total steps by varying the resolution as necessary
+        # note that due to its construction, the motor cannot turn in any arbitrary angle
+        # Important Note! to note that the resolution must be maximised when carrying heavy loads!
         step_sizes = [360/(200*2**x) for x in range(0,5)] # in degrees
 
         for i, step_size in enumerate(step_sizes):

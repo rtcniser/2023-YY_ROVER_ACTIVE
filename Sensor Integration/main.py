@@ -1,3 +1,5 @@
+""" test file for stepper library """
+
 from time import sleep
 import numpy as np
 import pyfirmata2 as pyfirmata
