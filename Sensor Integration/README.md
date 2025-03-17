@@ -8,13 +8,13 @@ Use pyfirmata2 with Arduino wherever necessary.
 
 ## Contents
 
-- Inverse Kinematics (with [one hinge](/inverse%20kinematics/inverse_kin%202%20arms.py) and [two hinges](/inverse%20kinematics/inverse_kin%203%20arms.py))
-- [Working arm controller](/arm_working.ipynb) (rotates the arm to a given $(x,y,z)$ coordinate)
-- [Manipulator Base Alignment](/basealign.py) (rotates the arm base to a given angle)
+- Inverse Kinematics (with [one hinge](inverse%20kinematics/inverse_kin%202%20arms.py) and [two hinges](inverse%20kinematics/inverse_kin%203%20arms.py))
+- [Working arm controller](arm_working.ipynb) (rotates the arm to a given $(x,y,z)$ coordinate)
+- [Manipulator Base Alignment](basealign.py) (rotates the arm base to a given angle)
 - Arduino Integrations
-  - [Servo Motor](/servo/servo.py)
-  - [Ultrasonic Sensor](/ultrasonic/ultrasonic.py)
-  - Stepper Motor ([A4988 driver](/StepperLib.py))
-  - [DC Motor](/dcmotor_encoder.py)
-  - [MPU 6050](/mpu6050.py) (accelerometer and gyroscope module)
-  - [NRF 2401](/nrf.py) (wireless transceiver)
+  - [Servo Motor](servo/servo.py)
+  - [Ultrasonic Sensor](ultrasonic/ultrasonic.py)
+  - Stepper Motor ([A4988 driver](StepperLib.py))
+  - [DC Motor](dcmotor_encoder.py)
+  - [MPU 6050](mpu6050.py) (accelerometer and gyroscope module)
+  - [NRF 2401](nrf.py) (wireless transceiver)
