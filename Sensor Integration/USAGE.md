@@ -62,7 +62,37 @@ stepper.rotate(num_rotations=2, direction=True)  # Rotate clockwise for 2 full r
 
 ---
 
-### 2. `basealign.py`
+### 2. `ultrasonic.py`
+**Description:** This module interfaces with an ultrasonic sensor to measure distances.
+
+#### `ultrasonic` Class
+**Usage:**
+```python
+from ultrasonic import ultrasonic
+
+# Example usage
+sensor = ultrasonic(trigger_pin=7, echo_pin=8, board=board)
+distance = sensor.read_distance()
+print(f"Distance: {distance} cm")
+```
+---
+
+### 3. `servo.py`
+**Description:** This module provides functionality to control a servo motor using an Arduino.
+
+#### `Servo` Class
+**Usage:**
+```python
+from servo import Servo
+
+# Example usage
+servo = Servo(board, pin=9)
+servo.turn_angle(90)  # Move servo to 90 degrees
+```
+
+---
+
+### 4. `basealign.py`
 **Description:** This module calculates the base alignment angle for a rover's arm based on its position.
 
 #### `alignbase` Class
@@ -83,7 +113,7 @@ arm_angle = base.align_robot_arm(10, -30)
 
 ---
 
-### 3. `dcmotor_encoder.py`
+### 5. `dcmotor_encoder.py`
 **Description:** This module provides functionality for controlling a DC motor with an encoder using an Arduino board. However, it is not completely or correctly developed yet.
 
 #### Functionality:
@@ -104,7 +134,7 @@ control_motor(0.5, 1)  # Set motor speed to 50% and rotate clockwise
 
 ---
 
-### 4. `force.py`
+### 6. `force.py`
 **Description:** This module reads the force sensor output using pyfirmata2.
 
 **Usage:**
@@ -120,7 +150,7 @@ force_value = read_force(board, pin=0)  # Read force sensor value from analog pi
 
 ---
 
-### 5. `location.py`
+### 7. `location.py`
 **Description:** This module keeps track of the current position of the rover and its projected destination.
 
 #### `Rover` Class
@@ -141,7 +171,7 @@ position, heading = rover.locate()  # Get current position and heading
 
 ---
 
-### 6. `mpu.py`
+### 8. `mpu.py`
 **Description:** This module interfaces with an MPU6050 sensor to retrieve acceleration, gyroscopic, and temperature data.
 
 #### `MPU` Class
@@ -158,7 +188,7 @@ print(data)  # Prints acceleration, gyro, and temperature readings
 
 ---
 
-### 7. `nrf.py`
+### 9. `nrf.py`
 **Description:** This module provides functionality for wireless communication using the nRF24L01 transceiver module.
 
 #### Usage:
