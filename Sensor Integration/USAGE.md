@@ -12,6 +12,8 @@ This document provides an overview of the different Python modules in this proje
 pip install pyfirmata2
 ```
 
+**Note:** There are ipynb files which you can refer to for a better understanding of how to integrate the modules.
+
 ### Example Usage
 
 ```python
