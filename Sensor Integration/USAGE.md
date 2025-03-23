@@ -2,14 +2,6 @@
 
 This document provides an overview of the different Python modules in this project and how to use them. Almost everything here uses `pyfirmata2` to communicate with an Arduino board, so make sure to install and understand `pyfirmata2` before proceeding.
 
-## Installation
-
-Before using the modules, ensure you have the required dependencies installed:
-
-```bash
-pip install -r requirements.txt
-```
-
 ## Using `pyfirmata2`
 
 `pyfirmata2` is a Python interface for Firmata, a protocol used for communication between a microcontroller (like an Arduino) and a host computer.
