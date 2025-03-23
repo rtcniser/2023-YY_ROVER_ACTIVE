@@ -4,7 +4,7 @@ Contains all the necessary code for communicating with the hardware and manipula
 - Install the Firmata library on Arduino IDE. The Firmata library implements the Firmata protocol for communicating with software on the host computer.
 - Upload the *Standard Firmata* code to the connected Arduino board from *Examples/Firmata/* in the menu. 
 
-Use pyfirmata2 with Arduino wherever necessary.
+Use pyfirmata2 with Arduino wherever necessary. More instructions are detailed in [USAGE.md](USAGE.md).
 
 ## Contents
 
