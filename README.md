@@ -37,9 +37,15 @@ The algorithm will also be trained to detect hurdles in the path and will autono
 :white_check_mark: The pre-trained ML model will identify the required pickup object (in this case, a cylinder). Using the camera attached to the arm, the rover estimates the position of the target at will perform pickup operations as necessary (mostly done, except for the position estimation).
 
 ### Rover Control
-:white_check_mark: Individual software based control modules have been build for different mechanical parts of the rover. However, they are yet to be integrated with rover navigation. 
+:white_check_mark: Individual software based control modules have been build for different mechanical parts of the rover.
 
-:white_check_mark: Inverse kinematics based arm control has also been implemented and tested. However, gripper control and pickup is yet to be implemented. The arm control flowchart is given below.
+:x:However, they are yet to be integrated with rover navigation. 
+
+:white_check_mark: Inverse kinematics based arm control has also been implemented and tested.
+
+:x: However, gripper control and pickup is yet to be implemented.
+
+The arm control flowchart is given below.
 
 <img style="float: centre;" src="docs/images/arm.png">
 
