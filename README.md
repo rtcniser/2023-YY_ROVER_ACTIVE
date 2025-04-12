@@ -31,10 +31,16 @@ Below diagram shows the control flow of the rover.
 Must contain a well documented circuit diagram of components used. -->
 ## Current Progress
 ### Algorithm
-:x: The primary operating system - Jetson, based on the stereo-vision computations, will map out the local environment and implement the Simultaneous Localization and Mapping (SLAM) algorithm. Heuristic path-finding and re-planning on encounter with obstacles will be performed repeatedly as the rover autonomously navigates the terrain.
+####The planned operations of the primary operating system - Jetson are the following:
+
+:x: Based on the stereo-vision computations, will map out the local environment and implement the Simultaneous Localization and Mapping (SLAM) algorithm.
+
+:x: Heuristic path-finding and re-planning on encounter with obstacles will be performed repeatedly as the rover autonomously navigates the terrain.
 The algorithm will also be trained to detect hurdles in the path and will autonomously decide whether to maneuver past them or not.
 
-:white_check_mark: The pre-trained ML model will identify the required pickup object (in this case, a cylinder). Using the camera attached to the arm, the rover estimates the position of the target at will perform pickup operations as necessary (mostly done, except for the position estimation).
+:white_check_mark: The pre-trained ML model will identify the required pickup object (in this case, a cylinder). [The file named cylinder.py actually does this, i.e., using the camera detect the cylinders.]
+
+:x: Using the camera attached to the arm, the rover estimates the position of the target at will perform pickup operations as necessary (the position estimation thing is not done yet).
 
 ### Rover Control
 :white_check_mark: Individual software based control modules have been build for different mechanical parts of the rover.
