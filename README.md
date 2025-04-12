@@ -31,7 +31,7 @@ Below diagram shows the control flow of the rover.
 Must contain a well documented circuit diagram of components used. -->
 ## Current Progress
 ### Algorithm
-####The planned operations of the primary operating system - Jetson are the following:
+#### The planned operations of the primary operating system - Jetson are the following:
 
 :x: Based on the stereo-vision computations, will map out the local environment and implement the Simultaneous Localization and Mapping (SLAM) algorithm.
 
