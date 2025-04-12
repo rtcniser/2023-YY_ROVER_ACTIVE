@@ -19,3 +19,9 @@ You get them from [Jetpack](https://docs.nvidia.com/jetson/jetpack/introduction/
 - [Jetson pytorch](https://docs.nvidia.com/deeplearning/frameworks/install-pytorch-jetson-platform/index.html)
 
 This should enable you to use all the Heavy computation (stereo-vision, ML models) stuff with CUDA based GPU acceleration
+
+## Scripts
+- stereo_cam_calibration.py: Prerequisites, have two cameras in a stereo configuration (side by side with a fixed distance in bettween, and thier principal axis parallel to each other)
+  input = image of a calibration object (chessboard pattern) through each camera, output = calibration data for each camera, to be used later for rectification
+- stereo_rectify-disparity.py: This script is supposed to take the calibration data and a constant feed of images (taken at the same time) from both the cameras and provide a disparity map, i.e. depth map of the scene.
+- hope.py: this i a ML based depth map generating script which only needs one camera, but gives normalised depth values. (to be used in tandem/backup with stereo-vision algorithms)  
