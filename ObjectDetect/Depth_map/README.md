@@ -15,8 +15,7 @@ Where do we get these things from ?
 Answer,
 You get them from [Jetpack](https://docs.nvidia.com/jetson/jetpack/introduction/index.html)
 
-opencv - find out how to get jetpack opencv with cuda support 
-
-[Jetson pytorch](https://docs.nvidia.com/deeplearning/frameworks/install-pytorch-jetson-platform/index.html)
+- opencv - find out how to get jetpack opencv with cuda support 
+- [Jetson pytorch](https://docs.nvidia.com/deeplearning/frameworks/install-pytorch-jetson-platform/index.html)
 
 This should enable you to use all the Heavy computation (stereo-vision, ML models) stuff with CUDA based GPU acceleration
