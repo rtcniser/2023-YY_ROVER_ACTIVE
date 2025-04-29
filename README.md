@@ -82,6 +82,11 @@ rover
 │   └───inverse kinematics
 │   │   ...
 ```
+
+## Links
+### Updates
+- [Updates Document](https://docs.google.com/document/d/16TDsY9T9-KBaweeewfRRz29wUWmzG7K-f-z0tWX4v24/edit?usp=sharing)
+
 <!-- # Chassis / Body Design 
 
 │   │   file011.txt
